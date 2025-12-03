@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>balasaktheeswar Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0a0a1a;
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+ img{
+	height: 200px;
+	width: 300px;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10,10,26,0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+  }
+  header h1 {
+    color: #00c6ff;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #00c6ff;
+  }
+
+  section {
+    min-height: 100vh;
+    padding: 100px 10%;
+  }
+
+
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  #home h2 {
+    font-size: 2.3rem;
+    color: #00c6ff;
+  }
+  #home p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+
+  /* About Section */
+  #about {
+    background: #111122;
+  }
+  #about h2 {
+    color: #00c6ff;
+    margin-bottom: 20px;
+  }
+  #about p {
+    max-width: 700px;
+    line-height: 1.6;
+  }
+
+
+  #skills h2 {
+    color: #00c6ff;
+    margin-bottom: 20px;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .skill {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  .skill:hover {
+    transform: scale(1.05);
+    background: #00c6ff;
+    color: #000;
+  }
+
+
+  #projects h2 {
+    color: #00c6ff;
+    margin-bottom: 20px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  .project-card {
+    background: #111122;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,198,255,0.1);
+    transition: transform 0.3s;
+  }
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(0,198,255,0.3);
+  }
+  .project-card h3 {
+    color: #00c6ff;
+    margin-bottom: 10px;
+  }
+  .project-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  .project-card a {
+    text-decoration: none;
+    color: #00c6ff;
+    font-weight: 500;
+  }
+
+ 
+  #contact h2 {
+    color: #00c6ff;
+    margin-bottom: 15px;
+  }
+  .contact-info p {
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+
+  footer {
+    background: black;
+    text-align: center;
+    padding: 18px;
+    color: #888;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Balasaktheeswar R</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Hello, I'm <span style="color:#00c6ff;">Balasaktheeswar</span></h2>
+    <p>Aspiring Software Engineer | Web Developer | AI Enthusiast</p>
+	  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate computer science student interested in web development, artificial intelligence,
+      and robotics. I love solving problems, learning new technologies, and creating projects that make people smile and laugh.  
+      <br><br>
+      My goal is to become a skilled software engineer who builds innovative solutions for real-world problems.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">C++</div>
+      <div class="skill">AI & ML Basics</div>
+      <div class="skill">pro in Web Development</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>🔮 Future Predictor</h3>
+        <p>A fun web app that uses the knowledge of all astrology and check your future by organising 9 planets and your DOB</p>
+        <a href="futurepre.html" target="_blank">Try it</a>
+	
+      </div>
+      <div class="project-card">
+        <h3>🌦 Weather Forecast</h3>
+        <p>Smart weather app that tells you to exactly what the weather is! .</p>
+       <a href="fore.html">try this instead</a>
+      </div>
+      <div class="project-card">
+        <h3>🤖 Robotics Simulation</h3>
+        <p>A simple robot control system using Python and sensors (concept project).</p>
+        <a href=""target="_blank">because of I not had sufficient knowledge, this project is expected to completed in 2027</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email:balasaktheeswar07@gmail.com<br></p><p>balasaktheeswar@proton.me</p>
+	<p>mobile: 9003442650</p>
+      <p>LinkedIn: linkedin.com/in/balasaktheeswarr</p>
+      <p>GitHub: github.com/balasaktheeswar07</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Balasaktheeswar R| Built with ❤ using HTML, CSS, and JS
+  </footer>
+</body>
+</html>
